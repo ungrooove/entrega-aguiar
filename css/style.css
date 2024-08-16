@@ -518,7 +518,7 @@ option {
 }
 
 
-button {
+.button-contacto {
     background: rgba(158, 158, 158, 0.233);
     border: none;
     border-radius: 10px;
@@ -528,7 +528,7 @@ button {
     transition: color .3s, background .3s;
 }
 
-button:hover {
+.button-contacto:hover {
     background: #ffffff;
     color: rgb(0, 0, 0);
 
