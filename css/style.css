@@ -704,32 +704,6 @@ footer .footer-cont .footer-text img {
 @media screen and (max-width: 1080px) {
 
     /*INTEGRANTES SECTION*/
-    .integrantes-cont .voz-img {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-    }
-
-    /*GALERIA*/
-    .grid-item:nth-child(7) {
-        grid-row: span 1;
-    }
-
-}
-
-@media screen and (max-width: 965px) {
-
-    /*INFO HOME*/
-    .info h2 {
-        width: 100%;
-    }
-
-    .info p {
-        width: 100%;
-    }
-
-    /*INTEGRANTES SECTION*/
     .integrantes-cont {
         display: none;
     }
@@ -746,7 +720,7 @@ footer .footer-cont .footer-text img {
 
     .integrantes-cont-mobile img {
         position: absolute;
-        top: -50%;
+        top: -70%;
         width: 100%;
     }
 
@@ -771,13 +745,33 @@ footer .footer-cont .footer-text img {
         text-align: center;
         align-self: flex-end;
         padding: 20px;
+        color: #f3e5ff;
     }
 
     .text-cont-mobile p {
         text-align: center;
         text-wrap: balance;
-        padding: 30px;
+        padding: 20px;
         font-size: 16px;
+        width: 100%;
+        color: #fcfdd3;
+    }
+
+    /*GALERIA*/
+    .grid-item:nth-child(7) {
+        grid-row: span 1;
+    }
+
+}
+
+@media screen and (max-width: 965px) {
+
+    /*INFO HOME*/
+    .info h2 {
+        width: 100%;
+    }
+
+    .info p {
         width: 100%;
     }
 
@@ -798,7 +792,7 @@ footer .footer-cont .footer-text img {
     .navbar {
         display: flex;
         list-style: none;
-        background-color: rgba(233, 233, 233, 0.386);
+        background-color: rgba(103, 103, 103, 0.663);
     }
 
     .navbar-nav {
@@ -956,7 +950,7 @@ footer .footer-cont .footer-text img {
 
     .info p {
         font-size: 16px;
-        width: 130%;
+        width: 120%;
     }
 
     /*MUSICA*/
@@ -979,12 +973,12 @@ footer .footer-cont .footer-text img {
     /*INFO HOME*/
     .info h2 {
         font-size: 30px;
-        width: 130%;
+        width: 100%;
     }
 
     .info p {
         font-size: 16px;
-        width: 130%;
+        width: 100%;
     }
 
     /*INTEGRANTES SECTION*/
@@ -1004,12 +998,12 @@ footer .footer-cont .footer-text img {
     /*INFO HOME*/
     .info h2 {
         font-size: 30px;
-        width: 140%;
+        width: 120%;
     }
 
     .info p {
         font-size: 16px;
-        width: 140%;
+        width: 130%;
     }
 
     /*INTEGRANTES SECTION*/
@@ -1036,6 +1030,6 @@ footer .footer-cont .footer-text img {
     }
     .integrantes-cont-mobile .fix-pos {
         width: 200%;
-        top: -50%;
+        top: -30%;
     }
 }
