@@ -9,14 +9,12 @@
         background-size: cover;
         width: 100%;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include distribucion(flex, center, center, column);
         h1{
             font-family: "Roboto", sans-serif;
             font-size: 22vw;
             text-transform: uppercase;
-            color: rgba(230, 220, 79, 0.63);
+            color: $color-principal;
             cursor: default;
             align-self: center;
             transition: font-size 1s;
@@ -27,7 +25,7 @@
         h2{
             font-family: "Roboto", sans-serif;
             text-transform: uppercase;
-            color: rgba(230, 220, 79, 0.63);
+            color: $color-principal;
             cursor: default;
             align-self: center;
             &:nth-child(-n+5){
@@ -36,8 +34,7 @@
         }
     }
     .info{
-        display: flex;
-        flex-direction: column;
+        @include distribucion(flex, center, center, column);
         padding: 50px;
         h2{
             align-self: center;
@@ -55,8 +52,7 @@
             padding: 30px;
             width: 80%;
             a{
-                color: rgb(196, 127, 221);
-                text-decoration: none;
+                @extend %enlaces;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -72,12 +68,11 @@
 }
 
 .integrantes{
-    display: flex;
-    flex-direction: column;
+    @include distribucion(flex, center, center, column);
     .integrantes-titulo{
         font-size: 300%;
         width: 50%;
-        color: rgba(230, 220, 79, 0.767);
+        color: $color-principal;
         text-align: center;
         border-bottom: 1px solid rgb(154, 154, 154);
         border-radius: 8px;
@@ -95,9 +90,6 @@
         height: 380px;
         margin: 30px;
         transition: margin 1s;
-        &:hover{
-            margin: 80px;
-        }
         img{
             position: absolute;
             bottom: 0;
@@ -109,9 +101,8 @@
             top: -30%;
         }
         .text-cont{
-            display: flex;
-            justify-content: space-between;
-            background-color: #51515111;
+            @include distribucion(flex, space-between, center, row);
+            background-color: $color-secundario;
             border-radius: 30px;
             box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.105);
             height: 380px;
@@ -129,7 +120,7 @@
                 align-self: center;
                 width: 400px;
                 cursor: default;
-                background-color: #5e5e5e2d;
+                background-color: $color-secundario;
                 border-radius: 10px;
                 margin: 20px;
                 z-index: 5;
@@ -149,7 +140,8 @@ main{
         display: flex;
         justify-content: center;
         align-items:  end;
-        background-color: #49484889;
+        @include distribucion(flex, center, end, row);
+        background-color: $color-secundario;
         border-radius: 20px 20px 0 20px;
         margin: 10px;
         width: 200px;
@@ -172,9 +164,7 @@ main{
                 height: 200px;
                 color: #b3b3b3;
                 border-bottom: 2px solid rgb(116, 116, 116);
-                display: flex;
-                justify-content: center;
-                align-items: last baseline;
+                @include distribucion(flex, center, last baseline, row);
                 font-size: 70px;
                 position: relative;
             }
@@ -183,8 +173,7 @@ main{
                 padding: 20px 50px;
                 margin: 20px;
                 a{
-                    text-decoration: none;
-                    color: white;
+                    @extend %enlaces;
                     transition: color .5s;
                     img{
                         width: 100%;
@@ -218,14 +207,10 @@ main{
 
 section{
     .music-container{
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        justify-content: center;
+        @include distribucion(flex, center, center, column);
         div{
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
+            @include distribucion(flex, center, flex-end, row);
             height: 200px;
             width: 100%;
             h2{
@@ -248,9 +233,7 @@ section{
 
 section{
     .galeria-titulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include distribucion(flex, center, center, row);
         height: 200px;
         text-align: left;
         font-size: 5vw;
@@ -317,14 +300,12 @@ section{
 
 form{
     div{
-        display: flex;
-        justify-content: center;
+        @include distribucion(flex, center, center, row);
         width: 100%;
         padding: 25px;
         fieldset{
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(53, 53, 53, 0.233);
+            @include distribucion(flex, center, center, column);
+            background-color: $color-secundario;
             border-radius: 10px;
             margin-top: 60px;
             width: 50%;
@@ -334,10 +315,8 @@ form{
                 padding: 30px;
             }
             .form-input{
-                display: flex;
-                justify-content: flex-start;
+                @include distribucion(flex, flex-start, center, row);
                 color: #ffffff;
-                justify-content: flex-start;
                 label{
                     font-size: 12px;
                     input{
@@ -345,7 +324,7 @@ form{
                         border-style: none;
                         box-shadow: 1px 1px 1px 0 rgba(145, 142, 142, 0.205);
                         outline: none;
-                        background: #48484828;
+                        background: $color-secundario;
                         color: #d3d3d398;
                         width: 100%;
                         height: 100%;
@@ -356,7 +335,7 @@ form{
                         border-style: none;
                         box-shadow: 1px 1px 1px 0 rgba(145, 142, 142, 0.205);
                         outline: none;
-                        background: #48484828;
+                        background: $color-secundario;
                         color: #d3d3d398;
                         width: 100%;
                         height: 100%;
@@ -370,7 +349,7 @@ form{
                         border-style: none;
                         box-shadow: 1px 1px 1px 0 rgba(145, 142, 142, 0.205);
                         outline: none;
-                        background: #48484828;
+                        background: $color-secundario;
                         color: #d3d3d398;
                         width: 100%;
                         height: 100%;

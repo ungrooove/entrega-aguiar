@@ -1,0 +1,18 @@
+//* VARIABLES
+$color-principal: rgba(230, 220, 79, 0.63);
+$color-secundario:  rgba(53, 53, 53, 0.371);
+
+//* EXTENDS
+%enlaces{
+    text-decoration: none;
+    color: rgb(246, 220, 255);
+}
+
+//* MIXIN
+@mixin distribucion($display, $justify, $align, $direction){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+

@@ -1,7 +1,11 @@
-/*Roboto*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/*Lato*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+header .nav-desktop ul .flex-cont div li a, .home-background .info p a, main .shop-container .cards-container .items-container a {
+  text-decoration: none;
+  color: #f6dcff; }
+
+/*Roboto*/
+/*Lato*/
 * {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -35,14 +39,13 @@ header .nav-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     list-style: none;
     margin: 10px 20px; }
     header .nav-desktop ul .flex-cont div li {
       margin: 10px;
       font-weight: 400; }
       header .nav-desktop ul .flex-cont div li a {
-        text-decoration: none;
-        color: white;
         font-size: 16px;
         transition: color .3s, font-size .5s; }
         header .nav-desktop ul .flex-cont div li a:hover {
@@ -57,6 +60,7 @@ header .nav-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     background-color: #77777786;
     padding: 10px;
     border-radius: 40px; }
@@ -72,8 +76,9 @@ header .nav-desktop {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     .home-background .hero h1 {
       font-family: "Roboto", sans-serif;
       font-size: 22vw;
@@ -94,6 +99,8 @@ header .nav-desktop {
         opacity: 0; }
   .home-background .info {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 50px; }
     .home-background .info h2 {
@@ -110,11 +117,8 @@ header .nav-desktop {
       text-align: center;
       padding: 30px;
       width: 80%; }
-      .home-background .info p a {
-        color: #c47fdd;
-        text-decoration: none; }
-        .home-background .info p a:hover {
-          text-decoration: underline; }
+      .home-background .info p a:hover {
+        text-decoration: underline; }
 
 /*INTEGRANTES*/
 .integrantes-cont-mobile {
@@ -122,11 +126,13 @@ header .nav-desktop {
 
 .integrantes {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column; }
   .integrantes .integrantes-titulo {
     font-size: 300%;
     width: 50%;
-    color: rgba(230, 220, 79, 0.767);
+    color: rgba(230, 220, 79, 0.63);
     text-align: center;
     border-bottom: 1px solid #9a9a9a;
     border-radius: 8px;
@@ -143,8 +149,6 @@ header .nav-desktop {
     height: 380px;
     margin: 30px;
     transition: margin 1s; }
-    .integrantes .integrantes-cont:hover {
-      margin: 80px; }
     .integrantes .integrantes-cont img {
       position: absolute;
       bottom: 0;
@@ -156,7 +160,9 @@ header .nav-desktop {
     .integrantes .integrantes-cont .text-cont {
       display: flex;
       justify-content: space-between;
-      background-color: #51515111;
+      align-items: center;
+      flex-direction: row;
+      background-color: rgba(53, 53, 53, 0.371);
       border-radius: 30px;
       box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.105);
       height: 380px; }
@@ -173,7 +179,7 @@ header .nav-desktop {
         align-self: center;
         width: 400px;
         cursor: default;
-        background-color: #5e5e5e2d;
+        background-color: rgba(53, 53, 53, 0.371);
         border-radius: 10px;
         margin: 20px;
         z-index: 5; }
@@ -185,7 +191,11 @@ main .modal-shop {
   display: flex;
   justify-content: center;
   align-items: end;
-  background-color: #49484889;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  background-color: rgba(53, 53, 53, 0.371);
   border-radius: 20px 20px 0 20px;
   margin: 10px;
   width: 200px;
@@ -211,6 +221,7 @@ main .shop-container {
       display: flex;
       justify-content: center;
       align-items: last baseline;
+      flex-direction: row;
       font-size: 70px;
       position: relative; }
     main .shop-container .cards-container .items-container {
@@ -218,8 +229,6 @@ main .shop-container {
       padding: 20px 50px;
       margin: 20px; }
       main .shop-container .cards-container .items-container a {
-        text-decoration: none;
-        color: white;
         transition: color .5s; }
         main .shop-container .cards-container .items-container a img {
           width: 100%;
@@ -241,14 +250,16 @@ main .shop-container {
 
 /*---MUSICA---*/
 section .music-container {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  justify-content: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
   section .music-container div {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
     height: 200px;
     width: 100%; }
     section .music-container div h2 {
@@ -267,6 +278,7 @@ section .galeria-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   height: 200px;
   text-align: left;
   font-size: 5vw;
@@ -318,12 +330,16 @@ section .grid-container {
 form div {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
   padding: 25px; }
   form div fieldset {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    background-color: rgba(53, 53, 53, 0.233);
+    background-color: rgba(53, 53, 53, 0.371);
     border-radius: 10px;
     margin-top: 60px;
     width: 50%; }
@@ -334,8 +350,9 @@ form div {
     form div fieldset .form-input {
       display: flex;
       justify-content: flex-start;
-      color: #ffffff;
-      justify-content: flex-start; }
+      align-items: center;
+      flex-direction: row;
+      color: #ffffff; }
       form div fieldset .form-input label {
         font-size: 12px; }
         form div fieldset .form-input label input {
@@ -343,7 +360,7 @@ form div {
           border-style: none;
           box-shadow: 1px 1px 1px 0 rgba(145, 142, 142, 0.205);
           outline: none;
-          background: #48484828;
+          background: rgba(53, 53, 53, 0.371);
           color: #d3d3d398;
           width: 100%;
           height: 100%;
@@ -353,7 +370,7 @@ form div {
           border-style: none;
           box-shadow: 1px 1px 1px 0 rgba(145, 142, 142, 0.205);
           outline: none;
-          background: #48484828;
+          background: rgba(53, 53, 53, 0.371);
           color: #d3d3d398;
           width: 100%;
           height: 100%;
@@ -365,7 +382,7 @@ form div {
           border-style: none;
           box-shadow: 1px 1px 1px 0 rgba(145, 142, 142, 0.205);
           outline: none;
-          background: #48484828;
+          background: rgba(53, 53, 53, 0.371);
           color: #d3d3d398;
           width: 100%;
           height: 100%;
@@ -397,8 +414,9 @@ form div {
 
 footer .footer-cont {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   background: linear-gradient(#2c2c2c, transparent); }
   footer .footer-cont .back-top {
@@ -411,9 +429,9 @@ footer .footer-cont {
       width: 35px; }
   footer .footer-cont .footer-text {
     display: flex;
-    flex-direction: column;
     justify-content: end;
     align-items: center;
+    flex-direction: column;
     font-size: 12px;
     font-family: "Roboto", sans-serif;
     gap: 10px;
@@ -423,6 +441,8 @@ footer .footer-cont {
   footer .footer-cont .redes-cont {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
     margin: 40px 0 20px 0;
     gap: 40px; }
     footer .footer-cont .redes-cont a .redes {

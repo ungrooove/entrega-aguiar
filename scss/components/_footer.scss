@@ -1,8 +1,6 @@
 footer{
     .footer-cont{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include distribucion(flex, center, center ,column);
         width: 100%;
         background: linear-gradient(#2c2c2c, transparent);
         .back-top{
@@ -18,10 +16,7 @@ footer{
             }
         }
         .footer-text{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: center;
+            @include distribucion(flex, end, center, column);
             font-size: 12px;
             font-family: "Roboto", sans-serif;
             gap: 10px;
@@ -31,8 +26,7 @@ footer{
             }
         }
         .redes-cont{
-            display: flex;
-            justify-content: center;
+            @include distribucion(flex, center, center, row);
             margin: 40px 0 20px 0;
             gap: 40px;
             a{
