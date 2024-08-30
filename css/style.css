@@ -37,6 +37,15 @@ header nav ul .flex-cont {
     margin: 10px 20px;
 }
 
+.logo {
+    width: 50px;
+    transition: rotate .5s;
+}
+
+.logo:hover {
+    rotate: 10deg;
+}
+
 
 header nav ul div .nav-pages {
     display: flex;
@@ -67,14 +76,7 @@ header nav ul li a:hover {
     font-size: 18px;
 }
 
-.logo {
-    width: 50px;
-    transition: rotate .5s;
-}
 
-.logo:hover {
-    rotate: 10deg;
-}
 
 /*---CHANCE HEADER---*/
 
@@ -117,23 +119,9 @@ header nav ul li a:hover {
     align-self: center;
 }
 
-.hero h2:nth-child(1) {
+.hero h2:nth-child(-n+5) {
     opacity: 0;
 }
-
-.hero h2:nth-child(2) {
-    opacity: 0;
-}
-
-
-.hero h2:nth-child(4) {
-    opacity: 0;
-}
-
-.hero h2:nth-child(5) {
-    opacity: 0;
-}
-
 
 
 /*---INFO HOME---*/
@@ -346,16 +334,6 @@ header nav ul li a:hover {
     font-weight: 300;
 }
 
-.button-item {
-    background-color: #808080;
-    color: rgb(255, 255, 255);
-    transition: color .5s, background-color .5s;
-}
-
-.button-item:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-}
 
 /*---MUSICA---*/
 
@@ -745,7 +723,7 @@ footer .footer-cont .footer-text img {
         text-align: center;
         align-self: flex-end;
         padding: 20px;
-        color: #f3e5ff;
+        color: #d7d7d7;
     }
 
     .text-cont-mobile p {
@@ -754,7 +732,7 @@ footer .footer-cont .footer-text img {
         padding: 20px;
         font-size: 16px;
         width: 100%;
-        color: #fcfdd3;
+        color: #ffffee;
     }
 
     /*GALERIA*/
@@ -806,13 +784,9 @@ footer .footer-cont .footer-text img {
     }
 
     /*INFO HOME*/
-    .info h2 {
-        width: 100%;
-    }
 
     .info p {
         font-size: 20px;
-        width: 100%;
     }
 
     /*INTEGRANTES-SECTION*/

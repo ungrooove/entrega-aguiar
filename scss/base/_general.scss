@@ -1,0 +1,39 @@
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1b1b1b;
+    color: rgb(221, 221, 221);
+}
+
+
+/*---NAV---*/
+
+header{
+    .navbar{
+        display: none;
+    }
+}
+
+/*---GALERIA---*/
+.spinner-border {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+
+}
+
+.carousel {
+    display: none;
+}
