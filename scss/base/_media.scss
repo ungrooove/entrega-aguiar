@@ -108,6 +108,14 @@
         }
     }
 
+    section{
+        .music-container{
+            .cont{
+                @include distribucion(flex, center, center, column);
+                height: 100%;
+            }
+        }
+    }
     /*GALERIA*/
     section{
         .grid-container{

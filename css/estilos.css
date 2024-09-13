@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-header .nav-desktop ul .flex-cont div li a, .home-background .info p a, main .shop-container .cards-container .items-container a {
+header .nav-desktop ul .flex-cont div li a, main .shop-container .cards-container .items-container a {
   text-decoration: none;
   color: #f6dcff; }
 
@@ -117,8 +117,11 @@ header .nav-desktop {
       text-align: center;
       padding: 30px;
       width: 80%; }
-      .home-background .info p a:hover {
-        text-decoration: underline; }
+      .home-background .info p a {
+        color: #a85bc2;
+        text-decoration: none; }
+        .home-background .info p a:hover {
+          text-decoration: underline; }
 
 /*INTEGRANTES*/
 .integrantes-cont-mobile {
@@ -235,7 +238,7 @@ main .shop-container {
           border-radius: 10px 10px 0 0; }
         main .shop-container .cards-container .items-container a div {
           background: linear-gradient(to top, rgba(93, 93, 93, 0.36), rgba(78, 78, 78, 0.294));
-          padding: 10px 30px;
+          padding: 30px;
           border-radius: 0 0 10px 10px; }
           main .shop-container .cards-container .items-container a div h3 {
             font-size: 20px;
@@ -268,6 +271,12 @@ section .music-container {
       font-weight: 300;
       border-bottom: 2px solid white;
       text-align: center; }
+  section .music-container .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%; }
   section .music-container iframe {
     width: 70%;
     align-self: center;
@@ -524,6 +533,12 @@ footer .footer-cont {
         font-size: 16px;
         width: 100%;
         color: #ffffee; }
+  section .music-container .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; }
   /*GALERIA*/
   section .grid-container .grid-item:nth-child(7) {
     grid-row: span 1; } }
